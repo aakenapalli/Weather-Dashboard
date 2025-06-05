@@ -1,13 +1,29 @@
-body {
+/* Reset some default browser styling */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Set a smooth, readable font across the app */
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #e6f0ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Ensure inputs and buttons have consistent appearance */
+input, button {
+  font-family: inherit;
+}
+
+/* Remove list styles for ul and ol if used globally */
+ul, ol {
+  list-style: none;
+}
+
+/* Add smooth scrolling for a polished experience */
+html {
+  scroll-behavior: smooth;
 }

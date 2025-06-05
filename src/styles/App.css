@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #e6f0ff;
+  color: #333;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+}
+
+.forecast-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1.25rem; /* Increased spacing */
+  margin-top: 2rem;
+  justify-items: center;
+}

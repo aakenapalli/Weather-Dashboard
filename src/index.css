@@ -1,11 +1,10 @@
-/* Reset some default browser styling */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Set a smooth, readable font across the app */
 body {
   font-family: 'Segoe UI', Roboto, sans-serif;
   background-color: #e6f0ff;
@@ -13,17 +12,17 @@ body {
   line-height: 1.6;
 }
 
-/* Ensure inputs and buttons have consistent appearance */
+
 input, button {
   font-family: inherit;
 }
 
-/* Remove list styles for ul and ol if used globally */
+
 ul, ol {
   list-style: none;
 }
 
-/* Add smooth scrolling for a polished experience */
+
 html {
   scroll-behavior: smooth;
 }

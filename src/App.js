@@ -24,7 +24,6 @@ export default function App() {
 
     console.log("Weather URL:", weatherURL);
 
-    // Fetch current weather
     fetch(weatherURL)
       .then(res => {
         if (!res.ok) throw new Error("City not found");
@@ -42,7 +41,6 @@ export default function App() {
         setForecast([]);
       });
 
-    // Fetch 5-day forecast
     fetch(forecastURL)
       .then(res => {
         if (!res.ok) throw new Error("Forecast fetch failed");
@@ -51,14 +49,12 @@ export default function App() {
       .then(data => {
         if (!data.list) throw new Error("Forecast data is malformed");
 
-        // Filter entries for 12:00:00 each day
         const daily = data.list.filter(item =>
           item.dt_txt.endsWith("12:00:00")
         );
 
         console.log("Filtered entries:", daily.map(f => f.dt_txt));
 
-        // Limit to 4 days
         const limited = daily.slice(0, 4);
         console.log("Filtered 4-day forecast:", limited);
 

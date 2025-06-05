@@ -1,4 +1,4 @@
-// src/components/ForecastList.jsx
+
 import WeatherCard from './WeatherCard';
 
 export default function ForecastList({ forecast }) {
